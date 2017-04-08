@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
       <div className="container">
@@ -13,6 +13,7 @@ class App extends Component {
             <li><a href="/courses">Courses</a></li>
           </ul>
         </header>
+        { this.props.children }
       </div>
     );
   }

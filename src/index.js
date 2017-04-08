@@ -16,9 +16,11 @@ import Teachers from './components/Teachers';
 // Render
 render((
   <Router history={hashHistory}>
-    <Route path="/" component={Home} />
-    <Route path="about" component={About} />
-    <Route path="courses" component={Courses} />
-    <Route path="teachers" component={Teachers} />
+    <Route component={App}>
+      <Route path="/" component={Home} />
+      <Route path="about" component={About} />
+      <Route path="courses" component={Courses} />
+      <Route path="teachers" component={Teachers} />
+    </Route>
   </Router>
 ), document.getElementById('root'));
